@@ -1,0 +1,7 @@
+datacoin:
+    build: datacoin
+    volumes:
+        - ./datacoin/.datacoin:/root/.datacoin
+    command: /init.sh
+    ports:
+        - "4777:4777"
